@@ -104,9 +104,9 @@ php artisan db:seed --class=EmployeeSeeder
 ```
 
 ### Routes
-```
-/employees              => Daftar pegawai
-/employees/create       => Menambah pegawai baru
-/employees/{id}         => Data pegawai berdasarkan ID
-/employees/{id}/edit    => Edit Data pegawai berdasarkan ID
-```
+| Route | Keterangan |
+| -- | -- |
+| `/employees` | Daftar pegawai |
+| `/employees/create` | Menambah pegawai baru |
+| `/employees/{id}` | Data pegawai berdasarkan ID |
+| `/employees/{id}/edit` | Edit Data pegawai berdasarkan ID |
