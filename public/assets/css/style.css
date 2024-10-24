@@ -1,0 +1,185 @@
+:root {
+    --col-primary: #0088ff;
+    --col-primary-darker: #5cb3ff;
+    --col-primary-disabled: #79addc;
+    --col-warning: #ffd900;
+    --col-warning-darker: #9b8400;
+    --col-warning-disabled: #ffed89;
+    --col-danger: #e54040;
+    --col-danger-darker: #7f2626;
+    --col-danger-disabled: #ff7e7e;
+}
+
+/* Page Styles */
+.btn {
+    border-radius: 10px;
+    margin: 2px;
+    transition: .3s ease;
+}
+
+.btn.btn-primary {
+    background: var(--col-primary);
+    border: 2px solid var(--col-primary);
+    color: white;
+}
+
+.btn.btn-primary:hover {
+    background: var(--col-primary-darker);
+    border: 2px solid var(--col-primary-darker);
+    color: black;
+}
+
+.btn.btn-warning {
+    background: var(--col-warning);
+    border: 2px solid var(--col-warning);
+    color: black;
+}
+
+.btn.btn-warning:hover {
+    background: var(--col-warning-darker);
+    border: 2px solid var(--col-warning-darker);
+    color: black;
+}
+
+.btn.btn-danger {
+    background: var(--col-danger);
+    border: 2px solid var(--col-danger);
+    color: black;
+}
+
+.btn.btn-danger:hover {
+    background: var(--col-danger-darker);
+    border: 2px solid var(--col-danger-darker);
+    color: black;
+}
+
+/* Data Tables Custom Styling */
+
+.dataTables_wrapper {
+    margin-top: 20px;
+}
+
+.dataTables_filter {
+    display: none;
+}
+
+.employeeId::before {
+    content: '#';
+}
+
+thead tr {
+    cursor: default;
+    position: sticky;
+    top: 0;
+    background: white;
+}
+
+tbody tr {
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+tbody tr:hover {
+    background: #0001 !important;
+}
+
+td {
+    vertical-align: middle;
+}
+
+/* Select2 Custom CSS */
+.select2-selection {
+    height: 38px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: inherit !important;
+}
+
+.custom-button {
+    border: 2px solid dodgerblue;
+    background: transparent;
+    color: #000;
+}
+
+.custom-button:hover {
+    border: 2px solid dodgerblue;
+    background: dodgerblue;
+    color: #fff;
+}
+
+/* CSS Profil Pegawai */
+.employee-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-col.left {
+    width: 300px;
+}
+
+.card-col.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+    padding: 20px;
+}
+
+.employee-name {
+    font-size: 32px;
+}
+
+.employee-job {
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+.employee-email a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.employee-email i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.employee-join {
+    font-size: 20px;
+}
+
+.employee-join i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.employee-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    object-fit: cover;
+}
+
+.card-employee-footer i.bi {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid black;
+}
+
+.card-employee-footer a i.bi,
+.card-employee-footer button i.bi {
+    transition: .3s ease;
+}
+
+.card-employee-footer a:hover i.bi,
+.card-employee-footer button:hover i.bi {
+    border-right: 1px solid white;
+}
+
+.dropzone {
+    width: 300px;
+    height: 300px;
+}
