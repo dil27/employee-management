@@ -110,3 +110,8 @@ php artisan db:seed --class=EmployeeSeeder
 | `/employees/create` | Menambah pegawai baru |
 | `/employees/{id}` | Data pegawai berdasarkan ID |
 | `/employees/{id}/edit` | Edit Data pegawai berdasarkan ID |
+| `/api/employees` | API semua pegawai |
+| `/api/employee/id/{id}` | API pegawai berdasarkan ID |
+| `/api/employee/name/{name}` | API pegawai berdasarkan Nama|
+| `/api/employee/position/{position}` | API pegawai berdasarkan Posisi |
+| `/api/employee/department/{department}` | API pergawai berdasarkan Department |

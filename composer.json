@@ -8,6 +8,7 @@
         "php": "^8.2",
         "kartik-v/bootstrap-fileinput": "dev-master",
         "laravel/framework": "^11.9",
+        "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9"
     },
     "require-dev": {

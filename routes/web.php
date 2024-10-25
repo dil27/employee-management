@@ -4,7 +4,8 @@ use App\Http\Controllers\EmployeeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/employees');
+    // return view('welcome');
 });
 
 Route::get('/employees', [EmployeeController::class, 'index'])->name('employees.index');
